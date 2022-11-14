@@ -7,15 +7,17 @@ const head = createHead();
 const LANGUAGE_CLASS: Record<SupportedLanguage, string> = {
   en: 'horizontal',
   ar: 'horizontal',
-  mon: 'vertical',
+  mon: 'vertical-lr',
+  jp: 'vertical-rl'
 };
 
-type Dir = 'ltr' | 'rtl';
+type Dir = 'ltr' | 'rtl' | 'auto';
 
 const LANGUAGE_DIR: Record<SupportedLanguage, Dir> = {
   en: 'ltr',
   ar: 'rtl',
-  mon: 'ltr',
+  mon: 'auto',
+  jp: 'auto',
 };
 
 type UseLang = [ SupportedLanguage, (newLang: SupportedLanguage) => void ];

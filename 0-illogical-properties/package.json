@@ -9,10 +9,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@iconify-json/mdi": "^1.1.34",
+    "@svgr/core": "^6.5.1",
     "i18next": "^22.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "unhead": "^0.6.6"
+    "unhead": "^0.6.6",
+    "unplugin-icons": "^0.14.13"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",

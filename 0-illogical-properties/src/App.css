@@ -8,6 +8,9 @@
 .horizontal {
   writing-mode: horizontal-tb;
 }
-.vertical {
+.vertical-lr {
   writing-mode: vertical-lr;
+}
+.vertical-rl {
+  writing-mode: vertical-rl;
 }

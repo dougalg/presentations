@@ -1,0 +1,54 @@
+.userCard {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+        "avatar base-info"
+        "contact-info data";
+    row-gap: 2rem;
+    column-gap: 2rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+.avatar {
+    grid-area: avatar;
+
+    place-self: center;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid white;
+
+    filter: drop-shadow(0 5px 3px rgba(200, 200, 200, 0.4));
+
+    width: 6rem;
+    height: 6rem;
+    min-width: 6rem;
+    min-height: 6rem;
+    max-width: 6rem;
+    max-height: 6rem;
+}
+
+.baseInfo {
+    grid-area: base-info;
+}
+
+.contactInfo {
+    grid-area: contact-info;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 1rem;
+    row-gap: 0.5rem;
+}
+
+.contactInfo > dd {
+    margin: 0;
+}
+
+.contactInfo p {
+    margin: 0;
+}
+
+.data {
+    grid-area: data;
+}
