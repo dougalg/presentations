@@ -5,6 +5,10 @@
   text-align: start;
 }
 
+.App > * + * {
+  margin-top: 1rem;
+}
+
 .horizontal {
   writing-mode: horizontal-tb;
 }
