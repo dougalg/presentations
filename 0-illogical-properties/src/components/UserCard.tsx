@@ -2,6 +2,7 @@ import styles from './UserCard.module.css';
 import IconPhone from '~icons/mdi/phone';
 import IconMail from '~icons/mdi/mail';
 import IconMapMarker from '~icons/mdi/map-marker';
+import GraphImage from '/area_graph.png';
 
 export type UserCardProps = {
     name: string;
@@ -25,22 +26,37 @@ export const UserCard = (props: UserCardProps): JSX.Element => {
             alt={`An image of ${props.name}`}
         />
         <div className={styles.baseInfo}>
-            <h1>{props.name}</h1>
-            <h2>{props.role}</h2>
+            <div
+                className={['space-children-inline-tight', styles.nameAndRole].join(' ')}
+            >
+                <h1 className='header-large'>{props.name}</h1>
+                <h2 className='header-small'>({props.role})</h2>
+            </div>
             <p>
                 {props.userDescription}
             </p>
         </div>
         <dl className={styles.contactInfo}>
-            <dt><IconPhone /></dt>
+            <dt>
+                <span className="screenreader-text">
+                    Phone number:
+                </span>
+                <IconPhone aria-hidden="true" />
+            </dt>
             <dd>
                 <a href={`tel:${props.phone}`}>{props.phone}</a>
             </dd>
-            <dt><IconMail /></dt>
+            <dt>
+                <span className='screenreader-text'>Email Address:</span>
+                <IconMail aria-hidden='true' />
+            </dt>
             <dd>
                 <a href={`mail:${props.email}`}>{props.email}</a>
             </dd>
-            <dt><IconMapMarker /></dt>
+            <dt>
+                <span className='screenreader-text'>Address:</span>
+                <IconMapMarker aria-hidden='true' />
+            </dt>
             <dd>
                 <p>{props.address.street}</p>
                 <p>{props.address.city}</p>
@@ -48,5 +64,9 @@ export const UserCard = (props: UserCardProps): JSX.Element => {
                 <p>{props.address.country}</p>
             </dd>
         </dl>
+        <img
+            className={styles.data}
+            src={GraphImage}
+        />
     </div>;
 };

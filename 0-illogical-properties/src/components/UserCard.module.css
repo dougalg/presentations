@@ -31,6 +31,21 @@
 
 .baseInfo {
     grid-area: base-info;
+    text-align: end;
+}
+
+:global(:where(.vertical-lr, .vertical-rl)) .baseInfo {
+    text-align: start;
+}
+
+.nameAndRole {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+:global(:where(.vertical-lr, .vertical-rl)) .nameAndRole {
+    justify-content: flex-start;
 }
 
 .contactInfo {
@@ -51,4 +66,5 @@
 
 .data {
     grid-area: data;
+    width: 100%;
 }

@@ -21,7 +21,7 @@ const userData: UserCardProps = {
 function App() {
   const [currentLanguage, updateLanguage] = useLang();
   return (
-    <div className="App">
+    <div className="App space-children-block-regular">
       <LanguageSelector
         currentLanguage={currentLanguage}
         onChange={updateLanguage}

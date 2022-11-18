@@ -2,11 +2,27 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: start;
 }
 
-.App > * + * {
-  margin-top: 1rem;
+.header-large {
+  font-size: 1.5rem;
+}
+
+.header-medium {
+  font-size: 1.2rem;
+}
+
+.header-small {
+  font-size: 1rem;
+}
+
+.screenreader-text {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
 }
 
 .horizontal {
@@ -17,4 +33,12 @@
 }
 .vertical-rl {
   writing-mode: vertical-rl;
+}
+
+.space-children-block-regular > * + * {
+  margin-block-start: 1rem;
+}
+
+.space-children-inline-tight > * + * {
+  margin-inline-start: 0.5rem;
 }
