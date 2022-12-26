@@ -1,0 +1,19 @@
+.pizza {
+    width: 300px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.pizza > img {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.pizza > p {
+    margin-inline: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

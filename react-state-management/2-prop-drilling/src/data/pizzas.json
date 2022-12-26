@@ -1,0 +1,47 @@
+{
+    "allPizzas": [1,2,3,4,5,6,7],
+    "pizza": [
+        {
+            "id": 1,
+            "name": "Margherita",
+            "imageSrc": "1_margherita.jpg",
+            "isLiked": false
+        },
+        {
+            "id": 2,
+            "name": "Hawaiian",
+            "imageSrc": "2_hawaiian.jpg",
+            "isLiked": true
+        },
+        {
+            "id": 3,
+            "name": "Meat",
+            "imageSrc": "3_meat.jpg",
+            "isLiked": false
+        },
+        {
+            "id": 4,
+            "name": "Quattro staggione",
+            "imageSrc": "4_quattro-stagioni.jpg",
+            "isLiked": false
+        },
+        {
+            "id": 5,
+            "name": "Pepperoni",
+            "imageSrc": "5_pepperoni.webp",
+            "isLiked": true
+        },
+        {
+            "id": 6,
+            "name": "Cheese",
+            "imageSrc": "6_cheese.jpg",
+            "isLiked": false
+        },
+        {
+            "id": 7,
+            "name": "Parma",
+            "imageSrc": "7_parma.jpg",
+            "isLiked": true
+        }
+    ]
+}
