@@ -3,7 +3,7 @@
   "defaultVariables": null,
   "documentGenerator": {
     "fromDocument": {
-      "url": "./swagger.yml",
+      "url": "swagger.yml",
       "output": null,
       "newLineBehavior": "Auto"
     }
@@ -69,7 +69,7 @@
       "enumNameGeneratorType": null,
       "serviceHost": null,
       "serviceSchemes": null,
-      "output": null,
+      "output": "./front/generated/index.ts",
       "newLineBehavior": "Auto"
     },
     "openApiToCSharpClient": {
@@ -219,7 +219,7 @@
       "enumNameGeneratorType": null,
       "serviceHost": null,
       "serviceSchemes": null,
-      "output": null,
+      "output": "./back/Pet Store API/Pet Store API/GeneratedController.cs",
       "newLineBehavior": "Auto"
     }
   }
