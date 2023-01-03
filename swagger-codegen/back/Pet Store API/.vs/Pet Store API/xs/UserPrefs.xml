@@ -1,4 +1,31 @@
 ﻿<Properties StartupConfiguration="{5A1E2423-64BD-4289-8476-F52A63CD7E06}|Default">
-  <MonoDevelop.Ide.ItemProperties.Pet_220Store_220API FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pet Store API/ControllerImplementation.cs">
+    <Files>
+      <File FileName="Pet Store API/Program.cs" Line="5" Column="11" />
+      <File FileName="Pet Store API/GeneratedController.cs" Line="265" Column="6" />
+      <File FileName="Pet Store API/ControllerImplementation.cs" Line="2" Column="16" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Pet Store API" expanded="True">
+            <Node name="Pet Store API" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
+              <Node name="ControllerImplementation.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Pet_220Store_220API PreferredExecutionTarget="/Applications/Firefox.app" FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

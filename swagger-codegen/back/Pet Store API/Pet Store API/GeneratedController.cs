@@ -13,7 +13,7 @@
 #pragma warning disable 3016 // Disable "CS3016 Arrays as attribute arguments is not CLS-compliant"
 #pragma warning disable 8603 // Disable "CS8603 Possible null reference return"
 
-namespace MyNamespace
+namespace PetStore
 {
     using System = global::System;
 
@@ -318,7 +318,7 @@ namespace MyNamespace
         public System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Pet>> FindPetsByStatus([Microsoft.AspNetCore.Mvc.FromQuery] Status? status)
         {
 
-            return _implementation.FindPetsByStatusAsync(status ?? MyNamespace.Status.Available);
+            return _implementation.FindPetsByStatusAsync(status ?? PetStore.Status.Available);
         }
 
         /// <summary>
