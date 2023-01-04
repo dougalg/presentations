@@ -57,6 +57,8 @@ npx create vite a11y-code-along  --template react-ts
 
 Delete all unused code
 
+### Set up linting formatting
+
 Install [eslint-plugin-jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y)
 
 ```bash
@@ -73,7 +75,8 @@ Set up the following files:
 .editorconfig
 ```
 
-Point out editorconfig with tabs
+Point out editorconfig with tabs.
+Show the "tab size" setting in VS Code to illustrate
 
 ### Start Basic Setup
 
