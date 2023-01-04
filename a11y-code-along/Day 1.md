@@ -46,7 +46,7 @@ Levels: A, AA, AAA (aim for AA+ where possible)
 
 ### Create the Project
 
-```
+```bash
 pnpm create vite a11y-code-along  --template react-ts
 yarn create vite a11y-code-along  --template react-ts
 npx create vite a11y-code-along  --template react-ts
@@ -55,6 +55,11 @@ npx create vite a11y-code-along  --template react-ts
 Delete all unused code
 
 Install [eslint-plugin-jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y)
+
+```bash
+pnpm install eslint prettier @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-prettier eslint-plugin-import eslint-plugin-react --save-dev
+pnpm install eslint eslint-plugin-jsx-a11y --save-dev
+```
 
 ### Start Basic Setup
 
