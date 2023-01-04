@@ -12,6 +12,7 @@
 4. [Headings with Context API](https://beta.reactjs.org/learn/passing-data-deeply-with-context)
 5. [FF a11y inspector](https://firefox-source-docs.mozilla.org/devtools-user/accessibility_inspector/)
 6. [Chrome a11y tools](https://developer.chrome.com/docs/devtools/accessibility/reference/)
+7. [Landmarks Reference](https://www.d.umn.edu/itss/training/online/structure/landmarks/)
 
 ## Walkthrough
 
@@ -82,3 +83,9 @@ Show the "tab size" setting in VS Code to illustrate
 
 - Lang in index.html
 - Title in index.html to "Minerva"
+- Add in the [basic landmarks](https://www.d.umn.edu/itss/training/online/structure/landmarks/):
+  - Header
+  - Main
+  - Nav
+  - Footer
+  - These could be done with aria-role BUT the ideal case for a11y is to always use the correct HTML if possible as it typically has beeter support
