@@ -62,7 +62,7 @@ Delete all unused code
 Install [eslint-plugin-jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y)
 
 ```bash
-pnpm install eslint prettier @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-prettier eslint-plugin-import eslint-plugin-react --save-dev
+pnpm install eslint prettier vite-plugin-eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-prettier eslint-plugin-import eslint-plugin-react --save-dev
 pnpm install eslint eslint-plugin-jsx-a11y --save-dev
 ```
 
