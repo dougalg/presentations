@@ -13,6 +13,7 @@
 5. [FF a11y inspector](https://firefox-source-docs.mozilla.org/devtools-user/accessibility_inspector/)
 6. [Chrome a11y tools](https://developer.chrome.com/docs/devtools/accessibility/reference/)
 7. [Landmarks Reference](https://www.d.umn.edu/itss/training/online/structure/landmarks/)
+8. [WAI Tutorials](https://www.w3.org/WAI/tutorials/)
 
 ## Walkthrough
 
@@ -88,4 +89,13 @@ Show the "tab size" setting in VS Code to illustrate
   - Main
   - Nav
   - Footer
-  - These could be done with aria-role BUT the ideal case for a11y is to always use the correct HTML if possible as it typically has beeter support
+  - These could be done with aria-role BUT the ideal case for a11y is to always use the correct HTML if possible as it typically has better support
+
+Use VoiceOver to navigate around the landmarks. (cmd + f5) then use rotor (ctrl + opt + u)
+[VoiceOver Cheatsheet](https://dequeuniversity.com/screenreaders/voiceover-keyboard-shortcuts)
+
+### Headings
+
+Add 3 sections and headings
+
+Add heading for nav, aria-labelled by
