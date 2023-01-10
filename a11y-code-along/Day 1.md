@@ -101,3 +101,7 @@ Add 3 sections and headings
 Add heading for nav, aria-labelled by
 
 Review in voiceover
+
+### Generalize Headings
+
+Create /components/Heading.tsx
