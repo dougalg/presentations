@@ -3,6 +3,7 @@
 1. Intro to basic a11y concepts
 1. Create a new Vite React App
 1. Set up the basic HTML to support the full site
+1. Minimal styling
 
 ## Helpful links
 
@@ -14,6 +15,7 @@
 6. [Chrome a11y tools](https://developer.chrome.com/docs/devtools/accessibility/reference/)
 7. [Landmarks Reference](https://www.d.umn.edu/itss/training/online/structure/landmarks/)
 8. [WAI Tutorials](https://www.w3.org/WAI/tutorials/)
+9. [Screenreader CSS Help](https://webaim.org/techniques/css/invisiblecontent/)
 
 ## Walkthrough
 
@@ -99,7 +101,7 @@ Use VoiceOver to navigate around the landmarks. (cmd + f5) then use rotor (ctrl 
 Add 3 sections and headings
 
 Add heading for nav, aria-labelled by
-screenreader-text class
+[screenreader-only class](https://webaim.org/techniques/css/invisiblecontent/)
 
 Review in voiceover
 
@@ -111,10 +113,15 @@ Create /components/Heading/\*
 
 ### Footer
 
-Set up footer subsections
-
 Install icons
 
 ```
 yarn add @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome @fortawesome/free-brands-svg-icons
 ```
+
+Set up footer subsections
+
+Review with screenreader
+Show it with manually removed aria-hidden
+Add aria-label, and check again, show it doesn't work
+add screenreader-only text

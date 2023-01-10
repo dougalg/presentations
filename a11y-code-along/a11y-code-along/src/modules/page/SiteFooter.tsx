@@ -17,7 +17,9 @@ export const SiteFooter = (): JSX.Element => (
 			</p>
 		</HeadingSection>
 		<HeadingSection tag="section">
-			<Heading id="site-nav-footer">Footer Site Navigation</Heading>
+			<Heading id="site-nav-footer" className="screenreader-only">
+				Footer Site Navigation
+			</Heading>
 			<SiteNav aria-labelledby="site-nav-footer" />
 		</HeadingSection>
 		<HeadingSection tag="section">
@@ -34,12 +36,15 @@ export const SiteFooter = (): JSX.Element => (
 			</Heading>
 			<nav aria-labelledby="social-links">
 				<a href="/">
+					<span className="screenreader-only">Facebook</span>
 					<FontAwesomeIcon icon={faFacebook} />
 				</a>
 				<a href="/">
+					<span className="screenreader-only">LinkedIn</span>
 					<FontAwesomeIcon icon={faLinkedin} />
 				</a>
 				<a href="/">
+					<span className="screenreader-only">Twitter</span>
 					<FontAwesomeIcon icon={faTwitter} />
 				</a>
 			</nav>
