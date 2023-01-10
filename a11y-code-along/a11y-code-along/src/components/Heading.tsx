@@ -1,11 +1,9 @@
-import { ReactNode } from 'react';
-
 type HeadingProps = {
 	level: number;
-	children: ReactNode;
-};
+	children: React.ReactNode;
+} & React.HTMLAttributes<HTMLHeadingElement>;
 
-export const Heading = ({ level, children }: HeadingProps): JSX.Element => {
-	const HeadingTag = `h${level}` as keyof JSX.IntrinsicElements;
-	return <HeadingTag>{children}</HeadingTag>;
+export const Heading = ({ level, children, ...otherProps }: HeadingProps): JSX.Element => {
+	const HeadingTag = `h${level}`;
+	return <HeadingTag {...otherProps}>{children}</HeadingTag>;
 };

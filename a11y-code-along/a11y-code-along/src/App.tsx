@@ -1,11 +1,14 @@
 import './App.css';
+import { Heading } from './components/Heading';
 
 function App() {
 	return (
 		<div className="App">
 			<header>
-				<h1>Minerva</h1>
-				<h2 id="nav-header">Site Navigation</h2>
+				<Heading level={1}>Minerva</Heading>
+				<Heading level={2} id="nav-header">
+					Site Navigation
+				</Heading>
 				<nav aria-labelledby="nav-header">
 					<a href="/">Demos</a>
 					<a href="/">Features</a>
@@ -15,13 +18,13 @@ function App() {
 			</header>
 			<main>
 				<section>
-					<h2>Popular Articles</h2>
+					<Heading level={2}>Popular Articles</Heading>
 				</section>
 				<section>
-					<h2>Editor&lsquo;s Choice</h2>
+					<Heading level={2}>Editor&lsquo;s Choice</Heading>
 				</section>
 				<section>
-					<h2>Latest Posts</h2>
+					<Heading level={2}>Latest Posts</Heading>
 				</section>
 			</main>
 			<footer>This is a footer</footer>
