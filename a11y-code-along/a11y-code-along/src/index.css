@@ -17,6 +17,11 @@
   --surface-default: #eee;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+}
+
 /** Dark Theme **/
 @media (prefers-color-scheme: dark) {
   :root {

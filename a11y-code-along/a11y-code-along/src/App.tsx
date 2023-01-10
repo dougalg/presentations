@@ -7,11 +7,11 @@ import { SiteHeader } from './modules/page/SiteHeader';
 function App() {
 	return (
 		<HeadingSection tag="div" className="App">
-			<SiteHeader />
-			<main>
+			<SiteHeader className="site-header" />
+			<main className="site-main">
 				<HomePage />
 			</main>
-			<SiteFooter />
+			<SiteFooter className="site-footer" />
 		</HeadingSection>
 	);
 }

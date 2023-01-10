@@ -3,9 +3,10 @@ import { HeadingSection } from '../../components/Heading/HeadingSection';
 import { SiteNav } from './SiteNav';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import React from 'react';
 
-export const SiteFooter = (): JSX.Element => (
-	<footer>
+export const SiteFooter = (props: React.HTMLAttributes<HTMLElement>): JSX.Element => (
+	<footer {...props}>
 		<HeadingSection tag="section">
 			<Heading>Minerva</Heading>
 			<HeadingSection>
