@@ -125,3 +125,36 @@ Review with screenreader
 Show it with manually removed aria-hidden
 Add aria-label, and check again, show it doesn't work
 add screenreader-only text
+
+### Base styling
+
+Set to:
+
+```css
+:root {
+  /** Light Theme (Default) **/
+  /** Text **/
+  --high-contrast-text: #555;
+  --low-contrast-text: #777;
+  --surface-default: #eee;
+}
+
+/** Dark Theme **/
+@media (prefers-color-scheme: dark) {
+  :root {
+    /** Text **/
+    --high-contrast-text: #aaa;
+    --low-contrast-text: #888;
+    --surface-default: #222;
+  }
+}
+
+:root {
+  color: var(--low-contrast-text);
+  background-color: var(--surface-default);
+}
+```
+
+Examine values in the inspector. Show how small and large text evaluate differently.
+
+Fix the colours and test both light and dark.
