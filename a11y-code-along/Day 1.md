@@ -41,6 +41,16 @@ npx create vite a11y-day1  --template react-ts
 
 Delete all unused code
 
+Minimal app.css
+
+```css
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+```
+
 ### Set up linting formatting
 
 Install [eslint-plugin-jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y)
@@ -52,12 +62,85 @@ pnpm install eslint eslint-plugin-jsx-a11y --save-dev
 
 Set up the following files:
 
+#### .prettierignore
+
 ```
+node_modules/
+dist/
 .prettierignore
-.prettierrc.json
-.eslintrc.js
-.editorconfig
 ```
+
+#### .prettierrc.json
+
+```json
+{
+  "trailingComma": "all",
+  "semi": true,
+  "singleQuote": true,
+  "printWidth": 120,
+  "bracketSpacing": true
+}
+```
+
+#### .eslintrc
+
+```json
+{
+  "env": {
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["prettier"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off"
+  }
+}
+```
+
+#### .editorconfig
+
+```conf
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+insert_final_newline = true
+tab_width = 2
+
+# Matches multiple files with brace expansion notation
+# Set default charset
+[*.{js,ts,jsx,tsx}]
+charset = utf-8
+indent_style = tab
+indent_size = 2
+
+# Matches the exact files either package.json or .travis.yml
+[*.{json}]
+indent_style = space
+indent_size = 2
+```
+
+Set formatter to ESLint in vscode
 
 Point out editorconfig with tabs.
 Show the "tab size" setting in VS Code to illustrate
