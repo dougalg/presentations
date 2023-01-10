@@ -1,36 +1,18 @@
 import './App.css';
 import { Heading } from './components/Heading/Heading';
 import { HeadingSection } from './components/Heading/HeadingSection';
+import { HomePage } from './modules/home/HomePage';
+import { SiteFooter } from './modules/page/SiteFooter';
+import { SiteHeader } from './modules/page/SiteHeader';
 
 function App() {
 	return (
 		<HeadingSection tag="div" className="App">
-			<header>
-				<Heading>Minerva</Heading>
-				<HeadingSection>
-					<Heading level={2} id="nav-header" className="screenreader-only">
-						Site Navigation
-					</Heading>
-				</HeadingSection>
-				<nav aria-labelledby="nav-header">
-					<a href="/">Demos</a>
-					<a href="/">Features</a>
-					<a href="/">Posts</a>
-					<a href="/">Categories</a>
-				</nav>
-			</header>
+			<SiteHeader />
 			<main>
-				<HeadingSection tag="section">
-					<Heading>Popular Articles</Heading>
-				</HeadingSection>
-				<HeadingSection tag="section">
-					<Heading level={2}>Editor&lsquo;s Choice</Heading>
-				</HeadingSection>
-				<HeadingSection tag="section">
-					<Heading level={2}>Latest Posts</Heading>
-				</HeadingSection>
+				<HomePage />
 			</main>
-			<footer>This is a footer</footer>
+			<SiteFooter />
 		</HeadingSection>
 	);
 }

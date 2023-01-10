@@ -107,4 +107,4 @@ Review in voiceover
 
 ### Generalize Headings
 
-Create /components/Heading.tsx
+Create /components/Heading/\*
