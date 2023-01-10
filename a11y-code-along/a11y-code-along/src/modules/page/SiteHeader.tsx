@@ -1,5 +1,6 @@
 import { Heading } from '../../components/Heading/Heading';
 import { HeadingSection } from '../../components/Heading/HeadingSection';
+import { SiteNav } from './SiteNav';
 
 export const SiteHeader = (): JSX.Element => (
 	<header>
@@ -9,11 +10,6 @@ export const SiteHeader = (): JSX.Element => (
 				Site Navigation
 			</Heading>
 		</HeadingSection>
-		<nav aria-labelledby="nav-header">
-			<a href="/">Demos</a>
-			<a href="/">Features</a>
-			<a href="/">Posts</a>
-			<a href="/">Categories</a>
-		</nav>
+		<SiteNav aria-labelledby="nav-header" />
 	</header>
 );

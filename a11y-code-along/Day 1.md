@@ -108,3 +108,13 @@ Review in voiceover
 ### Generalize Headings
 
 Create /components/Heading/\*
+
+### Footer
+
+Set up footer subsections
+
+Install icons
+
+```
+yarn add @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome @fortawesome/free-brands-svg-icons
+```
