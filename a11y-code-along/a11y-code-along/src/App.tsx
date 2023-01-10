@@ -8,7 +8,7 @@ function App() {
 			<header>
 				<Heading>Minerva</Heading>
 				<HeadingSection>
-					<Heading level={2} id="nav-header">
+					<Heading level={2} id="nav-header" className="screenreader-only">
 						Site Navigation
 					</Heading>
 				</HeadingSection>

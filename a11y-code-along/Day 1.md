@@ -99,8 +99,11 @@ Use VoiceOver to navigate around the landmarks. (cmd + f5) then use rotor (ctrl 
 Add 3 sections and headings
 
 Add heading for nav, aria-labelled by
+screenreader-text class
 
 Review in voiceover
+
+- ctrl+alt + cmd + h to navigate by headings
 
 ### Generalize Headings
 
