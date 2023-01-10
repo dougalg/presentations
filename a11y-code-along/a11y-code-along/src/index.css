@@ -12,8 +12,8 @@
 
   /** Light Theme (Default) **/
   /** Text **/
-  --high-contrast-text: #555;
-  --low-contrast-text: #777;
+  --high-contrast-text: #333;
+  --low-contrast-text: #444;
   --surface-default: #eee;
 }
 
@@ -21,14 +21,14 @@
 @media (prefers-color-scheme: dark) {
   :root {
     /** Text **/
-    --high-contrast-text: #aaa;
-    --low-contrast-text: #888;
+    --high-contrast-text: #e8e8e8;
+    --low-contrast-text: #ccc;
     --surface-default: #222;
   }
 }
 
 :root {
-  color: var(--low-contrast-text);
+  color: var(--high-contrast-text);
   background-color: var(--surface-default);
 }
 

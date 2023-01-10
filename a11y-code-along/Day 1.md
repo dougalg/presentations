@@ -158,3 +158,28 @@ Set to:
 Examine values in the inspector. Show how small and large text evaluate differently.
 
 Fix the colours and test both light and dark.
+
+```css
+:root {
+  /** Light Theme (Default) **/
+  /** Text **/
+  --high-contrast-text: #333;
+  --low-contrast-text: #444;
+  --surface-default: #eee;
+}
+
+/** Dark Theme **/
+@media (prefers-color-scheme: dark) {
+  :root {
+    /** Text **/
+    --high-contrast-text: #e8e8e8;
+    --low-contrast-text: #ccc;
+    --surface-default: #222;
+  }
+}
+
+:root {
+  color: var(--high-contrast-text);
+  background-color: var(--surface-default);
+}
+```
