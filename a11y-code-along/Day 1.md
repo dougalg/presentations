@@ -31,116 +31,14 @@
 
 Automated checking IS NOT sufficient
 
-### Create the Project
-
-```bash
-pnpm create vite a11y-day1  --template react-ts
-yarn create vite a11y-day1  --template react-ts
-npx create vite a11y-day1  --template react-ts
-```
-
-Delete all unused code
-
-Minimal app.css
-
-```css
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-```
-
-### Set up linting formatting
-
-Install [eslint-plugin-jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y)
-
-```bash
-pnpm install eslint prettier vite-plugin-eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-prettier eslint-plugin-import eslint-plugin-react --save-dev
-pnpm install eslint eslint-plugin-jsx-a11y --save-dev
-```
-
-Set up the following files:
-
-#### .prettierignore
-
-```
-node_modules/
-dist/
-.prettierignore
-```
-
-#### .prettierrc.json
+Set formatter to ESLint in vscode, and in json settings for vscode enable:
 
 ```json
-{
-  "trailingComma": "all",
-  "semi": true,
-  "singleQuote": true,
-  "printWidth": 120,
-  "bracketSpacing": true
-}
-```
-
-#### .eslintrc
-
-```json
-{
-  "env": {
-    "node": true
-  },
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:import/recommended",
-    "plugin:jsx-a11y/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended"
-  ],
-  "plugins": ["prettier"],
-  "settings": {
-    "react": {
-      "version": "detect"
-    },
-    "import/resolver": {
-      "node": {
-        "paths": ["src"],
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
-      }
-    }
-  },
-  "rules": {
-    "react/react-in-jsx-scope": "off"
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
   }
-}
 ```
-
-#### .editorconfig
-
-```conf
-# top-most EditorConfig file
-root = true
-
-# Unix-style newlines with a newline ending every file
-[*]
-end_of_line = lf
-insert_final_newline = true
-tab_width = 2
-
-# Matches multiple files with brace expansion notation
-# Set default charset
-[*.{js,ts,jsx,tsx}]
-charset = utf-8
-indent_style = tab
-indent_size = 2
-
-# Matches the exact files either package.json or .travis.yml
-[*.{json}]
-indent_style = space
-indent_size = 2
-```
-
-Set formatter to ESLint in vscode
 
 Point out editorconfig with tabs.
 Show the "tab size" setting in VS Code to illustrate
@@ -195,26 +93,26 @@ Set to:
 
 ```css
 :root {
-  /** Light Theme (Default) **/
-  /** Text **/
-  --high-contrast-text: #555;
-  --low-contrast-text: #777;
-  --surface-default: #eee;
+	/** Light Theme (Default) **/
+	/** Text **/
+	--high-contrast-text: #555;
+	--low-contrast-text: #777;
+	--surface-default: #eee;
 }
 
 /** Dark Theme **/
 @media (prefers-color-scheme: dark) {
-  :root {
-    /** Text **/
-    --high-contrast-text: #aaa;
-    --low-contrast-text: #888;
-    --surface-default: #222;
-  }
+	:root {
+		/** Text **/
+		--high-contrast-text: #aaa;
+		--low-contrast-text: #888;
+		--surface-default: #222;
+	}
 }
 
 :root {
-  color: var(--low-contrast-text);
-  background-color: var(--surface-default);
+	color: var(--low-contrast-text);
+	background-color: var(--surface-default);
 }
 ```
 
@@ -224,25 +122,25 @@ Fix the colours and test both light and dark.
 
 ```css
 :root {
-  /** Light Theme (Default) **/
-  /** Text **/
-  --high-contrast-text: #333;
-  --low-contrast-text: #444;
-  --surface-default: #eee;
+	/** Light Theme (Default) **/
+	/** Text **/
+	--high-contrast-text: #333;
+	--low-contrast-text: #444;
+	--surface-default: #eee;
 }
 
 /** Dark Theme **/
 @media (prefers-color-scheme: dark) {
-  :root {
-    /** Text **/
-    --high-contrast-text: #e8e8e8;
-    --low-contrast-text: #ccc;
-    --surface-default: #222;
-  }
+	:root {
+		/** Text **/
+		--high-contrast-text: #e8e8e8;
+		--low-contrast-text: #ccc;
+		--surface-default: #222;
+	}
 }
 
 :root {
-  color: var(--high-contrast-text);
-  background-color: var(--surface-default);
+	color: var(--high-contrast-text);
+	background-color: var(--surface-default);
 }
 ```
