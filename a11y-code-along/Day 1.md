@@ -57,6 +57,14 @@ Show the "tab size" setting in VS Code to illustrate
 Use VoiceOver to navigate around the landmarks. (cmd + f5) then use rotor (ctrl + opt + u)
 [VoiceOver Cheatsheet](https://dequeuniversity.com/screenreaders/voiceover-keyboard-shortcuts)
 
+### Nav styling
+
+Show how to turn on tab into link on mac:
+
+Keyboard Settings -> Keyboard navigation (on)
+
+Note the default focus styles here. Most HTML is accessible BY DEFAULT
+
 ### Headings
 
 Add 3 sections and headings
